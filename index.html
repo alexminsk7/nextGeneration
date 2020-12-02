@@ -11,10 +11,10 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container container__1">
 			<nav>
-				<a href="#!" class="header__logo jksub-font">BS</a>
+				<a href="#!" class="logo header__logo jksub-font">BS</a>
 				<div class="header__badge jksub-font">
 					A
 					L
@@ -39,18 +39,74 @@
 				<span>x</span>
 				<span>t</span>
 			</div>
-			<a class="scroll jksub-font" href="#!">scroll down</a>
+			<a class="scroll go_to jksub-font" href="#services">scroll down</a>
 		</div>
 	</header>
 
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
+
 			<div class="services__intro">
 				<p class="services__summary">we provide</p>
 				<h2 class="services__title">services</h2>
 			</div>
+
+			<div class="services__cards">
+				<a class="services__item" href="#!">
+					<span class="services__index">01</span>
+					<i class="services__icon icon icon-Starship"></i>
+					<h3 class="services__title">
+						fast startup
+						launch
+					</h3>
+					<span class="services__more jksub-font">+</span>
+				</a>
+				<a class="services__item" href="#!">
+					<span class="services__index">02</span>
+					<i class="services__icon icon icon-Cup"></i>
+					<h3 class="services__title">
+						awesome
+						web design
+					</h3>
+					<span class="services__more jksub-font">+</span>
+				</a>
+				<a class="services__item" href="#!">
+					<span class="services__index">03</span>
+					<i class="services__icon icon icon-Keyboard"></i>
+					<h3 class="services__title">
+						breathtaking
+						coding
+					</h3>
+					<span class="services__more jksub-font">+</span>
+				</a>
+				<a class="services__item" href="#!">
+					<span class="services__index">04</span>
+					<i class="services__icon icon icon-Headset"></i>
+					<h3 class="services__title">
+						up to date
+						support
+					</h3>
+					<span class="services__more jksub-font">+</span>
+				</a>
+			</div>
+
 		</div>
 	</section>
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__nav">
+				<a class="logo footer__logo jksub-font" href="#!">BS</a>
+				<span class="footer__rights">
+					2021 / all rights reserved
+				</span>
+				<button class="footer__btn btn">contact us</button>
+				<span class="footer__phone">+1 8674 948 94 2</span>
+				<span class="footer__email">info@sitename.ru</span>
+				<a class="footer__link go_to" href="#header"></a>
+			</div>
+		</div>
+	</footer>
 
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/main.js"></script>
