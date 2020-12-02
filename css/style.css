@@ -1,0 +1,341 @@
+@font-face {
+  font-family: 'Jaapokkisubtract';
+  src: url("../fonts/JaapokkisubtractRegular.eot");
+  src: url("../fonts/JaapokkisubtractRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/JaapokkisubtractRegular.woff2") format("woff2"), url("../fonts/JaapokkisubtractRegular.woff") format("woff"), url("../fonts/JaapokkisubtractRegular.ttf") format("truetype"), url("../fonts/JaapokkisubtractRegular#svgFontName") format("svg");
+}
+
+/* Box sizing rules */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Remove default margin|padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #0001c5;
+  letter-spacing: 1.02px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Jaapokkisubtract', sans-serif;
+  letter-spacing: 0.14em;
+  font-weight: normal;
+  line-height: 1.25em;
+}
+
+h2 {
+  margin: 0;
+  letter-spacing: 3.4px;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class],
+li {
+  list-style: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(2px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 7%;
+  outline: 1px solid coral;
+}
+
+.container__1 {
+  position: relative;
+  height: 100vh;
+}
+
+.jksub-font {
+  font-family: 'Jaapokkisubtract', sans-serif;
+}
+
+.btn {
+  width: 220px;
+  font-size: 20px;
+  font-family: 'Jaapokkisubtract', sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  padding: 20px 0;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #0001c5;
+}
+
+/* Root properties for project */
+.header {
+  color: #fff;
+  height: 100vh;
+  background: #0406bd url(../img/first_bg.jpg) no-repeat center bottom/cover;
+  box-shadow: 0 39px 190px rgba(33, 48, 99, 0.4);
+}
+
+.header nav .header__logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 8%;
+  font-size: 25px;
+  line-height: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0000a0;
+  background-color: #fff;
+  z-index: 9;
+  transition: all 0.5s;
+}
+
+.header nav .header__logo:hover {
+  border-radius: 4px;
+}
+
+.header nav .header__badge {
+  width: 42px;
+  height: 180px;
+  position: absolute;
+  left: 60%;
+  top: 0;
+  font-size: 18px;
+  text-align: center;
+  line-height: 2.2em;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: red;
+}
+
+.header nav .header__menu {
+  width: 40px;
+  position: absolute;
+  top: 8%;
+  right: 0;
+  cursor: pointer;
+}
+
+.header nav .header__menu:hover span:nth-child(2) {
+  width: 100%;
+}
+
+.header nav .header__menu:hover span:nth-child(3) {
+  width: 100%;
+}
+
+.header nav .header__menu span {
+  width: 100%;
+  background: #fff;
+  display: block;
+  height: 2px;
+  margin-top: 6px;
+  transition: all 0.5s;
+}
+
+.header nav .header__menu span:nth-child(2), .header nav .header__menu span:nth-child(3) {
+  margin-left: auto;
+}
+
+.header nav .header__menu span:nth-child(2) {
+  width: 75%;
+}
+
+.header nav .header__menu span:nth-child(3) {
+  width: 50%;
+}
+
+.header .offer {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -250px;
+}
+
+.header .offer .offer__bg {
+  font-size: 300px;
+  color: #1b1cc4;
+  position: absolute;
+}
+
+.header .offer .offer__title {
+  position: relative;
+  max-width: 560px;
+  font-size: 55px;
+  letter-spacing: 6.6px;
+  font-weight: normal;
+  margin-top: 160px;
+  margin-left: 134px;
+  margin-bottom: 40px;
+}
+
+.header .offer .offer__title:after {
+  content: '';
+  display: block;
+  width: 29px;
+  height: 5px;
+  position: absolute;
+  top: -20px;
+  right: 180px;
+  background-color: #fff;
+}
+
+.header .offer .offer__text {
+  max-width: 337px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 226px;
+  margin-bottom: 50px;
+}
+
+.header .offer .offer__btn {
+  margin-left: 345px;
+}
+
+.header .next {
+  max-width: 400px;
+  position: absolute;
+  left: 67%;
+  top: 50%;
+  margin-top: -130px;
+  text-shadow: 17px 15px 0 rgba(0, 2, 108, 0.27);
+  font-size: 300px;
+  line-height: 0;
+}
+
+.header .next span {
+  margin-right: -70px;
+  line-height: 0.7em;
+}
+
+.header .next span:nth-child(2) {
+  color: #0048ff;
+}
+
+.header .scroll {
+  display: block;
+  width: 100px;
+  height: 135px;
+  position: absolute;
+  right: 4%;
+  bottom: 0;
+  font-size: 22px;
+  line-height: 27px;
+  padding-top: 23px;
+  padding-right: 40px;
+  border-right: 3px solid #fff;
+  transition: all 0.5s;
+}
+
+.header .scroll:hover {
+  background: #fff;
+  color: #0000a0;
+}
+
+.services {
+  color: #0001c5;
+  padding-top: 170px;
+}
+
+.services .services__intro {
+  font-family: 'Jaapokkisubtract', sans-serif;
+}
+
+.services .services__intro .services__summary {
+  font-size: 23px;
+  margin: 0;
+  color: #8687e4;
+}
+
+.services .services__intro .services__title {
+  font-size: 85px;
+  margin-left: 50px;
+  line-height: 59px;
+  margin-top: 20px;
+}
+
+.services .services__intro .services__title:after {
+  content: '';
+  display: inline-block;
+  width: 29px;
+  height: 5px;
+  margin-bottom: -15px;
+  background-color: #0001c5;
+}
